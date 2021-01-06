@@ -20,7 +20,7 @@ At this stage only the PITOT HEAT switch and FUEL PUMP switch are implemented.
 
 ## get_vars.py
 
-Reads Simulator variables out of MSFS2020 (also using Python-SimConnect) and discplays on console.
+Reads Simulator variables out of MSFS2020 (also using Python-SimConnect) and displays on console.
 
 ## Notes
 
