@@ -31,5 +31,7 @@ For Python-SimConnect, Python 64-bit is needed.
 Below are links to the Microsoft documentation for SimConnect
 
 [Function](https://docs.microsoft.com/en-us/previous-versions/microsoft-esp/cc526983(v=msdn.10))
+
 [Event IDs](https://docs.microsoft.com/en-us/previous-versions/microsoft-esp/cc526980(v=msdn.10))
+
 [Simulation Variables](https://docs.microsoft.com/en-us/previous-versions/microsoft-esp/cc526981(v=msdn.10))
