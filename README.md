@@ -16,7 +16,7 @@ So that testing could be done without the need for Arduino board this uses a [tk
 
 ## get_vars.py
 
-Reads Simulator variables out of MSFS2020 (also using Python-SimConnect) and discplays on console.
+Reads Simulator variables out of MSFS2020 (also using Python-SimConnect) and displays on console.
 
 ## Notes
 
