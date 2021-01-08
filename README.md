@@ -6,7 +6,7 @@ This project is in the very initial and early stages of development but is in a 
 
 ## arduino.py
 
-Listens on COM3 for data to arrive, then triggers Events to Microsoft Flight Simulator S2020 via Python-SimConnect based on a Dictionary which maps the data received with the Event Name.
+Listens on COM3 for data to arrive from an Arduino, then triggers Events to Microsoft Flight Simulator S2020 via Python-SimConnect based on a Dictionary which maps the data received with the Event Name.
 I currently have it working with some simple two-way switches connected to the Arduino.
 The code running on the Arduino can be found in 'single_switch.ino'
 
