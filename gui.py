@@ -1,5 +1,10 @@
+# gui.py
+
+# Displays a tkinter GUI wih buttons which trigger Events to Microsoft Flight Simulator S2020 via Python-SimConnect
+# At this stage only the PITOT HEAT switch and FUEL PUMP switch are implemented
+
 from tkinter import *
-from SimConnect import *  #Requires SimConnect from https://pypi.org/project/SimConnect/ (pip install SimConnect)
+from SimConnect import *  #Requires Python-SimConnect from https://pypi.org/project/SimConnect/ (pip install SimConnect)
 
 # Create connection to Sim
 sm = SimConnect()
@@ -32,9 +37,9 @@ gui.geometry("500x200")
 
 
 #Add buttons
-Button(gui, text="PITOT HEAT", width = 10, command=lambda: trigger_event("PITOT_HEAT_TOGGLE")) .grid(row=0, column=0, sticky=W)
-Button(gui, text="FUEL_PUMP", width = 10, command=lambda: trigger_event("FUEL_PUMP")) .grid(row=0, column=1, sticky=W)
-
+Button(gui, text="PITOT HEAT", width = 15, command=lambda: trigger_event("PITOT_HEAT_TOGGLE")) .grid(row=0, column=0, sticky=W)
+Button(gui, text="FUEL PUMP", width = 15, command=lambda: trigger_event("FUEL_PUMP")) .grid(row=0, column=1, sticky=W)
+Button(gui, text="LANDING LIGHTS", width = 15, command=lambda: trigger_event("LANDING_LIGHTS_TOGGLE")) .grid(row=0, column=2, sticky=W)
 
 #loop
 gui.mainloop()

@@ -7,16 +7,12 @@ This project is in the very initial and early stages of development but is in a 
 ## arduino.py
 
 Listens on COM3 for data to arrive, then triggers Events to Microsoft Flight Simulator S2020 via Python-SimConnect based on a Dictionary which maps the data received with the Event Name.
-I currently have it working with a simple push button switch and an LED conneted to the Arduino.
+I currently have it working with some simple two-way switches connected to the Arduino.
 The code running on the Arduino can be found in 'single_switch.ino'
-
-Note: At this stage only the PITOT HEAT switch and FUEL PUMP switch are implemented in Python and only the PITOT HEAT switch is considered in the hardware (and in the Arduino code).
 
 ## gui.py
 
 So that testing could be done without the need for Arduino board this uses a [tkinter] (https://github.com/python/cpython/tree/master/Lib/tkinter/) GUI with buttons to trigger Events to Microsoft Flight Simulator S2020 via Python-SimConnect.
-
-At this stage only the PITOT HEAT switch and FUEL PUMP switch are implemented.
 
 ## get_vars.py
 
