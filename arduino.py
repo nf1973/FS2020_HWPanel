@@ -2,7 +2,7 @@
 
 # Listens on COM3 for data to arrive, then triggers Events to Microsoft Flight Simulator S2020 via Python-SimConnect based on a Dictionary which maps the data received with the Event Name
 # Works with an Arduino board with two-way switches which are configured to send respective data
-# At this stage only the PITOT HEAT switch and FUEL PUMP switch are implemented
+
 
 from SimConnect import *  #Requires Python-SimConnect from https://pypi.org/project/SimConnect/ (pip install SimConnect)
 import serial  #Requires pySerial (pip install pyserial)
@@ -12,7 +12,7 @@ sm = SimConnect()
 ae = AircraftEvents(sm)
 aq = AircraftRequests(sm, _time=2000)
 
-# Create connection to Arduino
+# Create connection to Arduino.
 ser = serial.Serial('COM3', 9600)
 
 def trigger_event(event_name, value_to_use = None):

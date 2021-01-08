@@ -2,9 +2,9 @@
 // single_button.ino
 
 //set button and led pins
-const int switchAPin = 7;   
-const int switchBPin = 8; 
-const int switchCPin = 9; 
+const int switchAPin = 7;
+const int switchBPin = 8;
+const int switchCPin = 9;
 
 
 int currentSwitchAState;
@@ -25,13 +25,13 @@ int triggerEventIfStateChanged (int lastState, int currentState, String command)
     }
     return 0;
 }
-  
-void setup() 
+
+void setup()
 {
-  pinMode(switchAPin, INPUT_PULLUP);  
-  pinMode(switchBPin, INPUT_PULLUP);  
+  pinMode(switchAPin, INPUT_PULLUP);
+  pinMode(switchBPin, INPUT_PULLUP);
   pinMode(switchCPin, INPUT_PULLUP);
-   
+
   Serial.begin(9600);
 
   //Initially set the "last" states to the current state to try and avoid a change being detected the first time the loop runs.
@@ -40,7 +40,7 @@ void setup()
   lastSwitchCState = digitalRead(switchCPin);
 }
 
-void loop() 
+void loop()
 {
 
   delay(50); // slow the loop down to avoid needing to debounce the switches
@@ -54,11 +54,10 @@ void loop()
   triggerEventIfStateChanged(currentSwitchAState, lastSwitchAState, "A");
   triggerEventIfStateChanged(currentSwitchBState, lastSwitchBState, "B");
   triggerEventIfStateChanged(currentSwitchCState, lastSwitchCState, "C");
- 
+
   //Update variables holding last states
   lastSwitchAState = currentSwitchAState;
   lastSwitchBState = currentSwitchBState;
   lastSwitchCState = currentSwitchCState;
-  
+
 }
-  

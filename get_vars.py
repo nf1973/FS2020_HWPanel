@@ -15,6 +15,7 @@ def getSimVarDict():
 
     return varDict
 
+
 # Create connection to Sim
 sm = SimConnect()
 ae = AircraftEvents(sm)
