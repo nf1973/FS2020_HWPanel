@@ -12,7 +12,7 @@ The code running on the Arduino can be found in 'single_switch.ino'
 
 ## gui.py
 
-So that testing could be done without the need for Arduino board this uses a [tkinter] (https://github.com/python/cpython/tree/master/Lib/tkinter/) GUI with buttons to trigger Events to Microsoft Flight Simulator S2020 via Python-SimConnect.
+So that testing could be done without the need for Arduino board this uses a [tkinter](https://github.com/python/cpython/tree/master/Lib/tkinter/) GUI with buttons to trigger Events to Microsoft Flight Simulator S2020 via Python-SimConnect.
 
 ## get_vars.py
 
