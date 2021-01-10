@@ -1,6 +1,6 @@
 # FS2020-HWPanel
 
-FS2020-HWPanel leverages [Python-SimConnect](https://github.com/odwdinc/Python-SimConnect) and [pySerial] (https://github.com/pyserial/pyserial) to allow two-way switches connected to an Arduino board to control switches in Microsoft Flight Simulator 2020 (MSFS2020).
+FS2020-HWPanel leverages [Python-SimConnect](https://github.com/odwdinc/Python-SimConnect) and [pySerial](https://github.com/pyserial/pyserial) to allow two-way switches connected to an Arduino board to control switches in Microsoft Flight Simulator 2020 (MSFS2020).
 
 This project is in the very initial and early stages of development but is in a working state (at least with the Cessna 172).
 
